@@ -1,0 +1,41 @@
+@media screen and (max-width: 980px) {
+  .sectionHeader[class] {
+    font-size: 32px;
+  }
+  .footer[class] {
+    padding-bottom: 38px;
+  }
+  .footerBtn[class] {
+    margin-top: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sectionHeader[class] {
+    font-size: 24px;
+  }
+
+  .footerBtn[class] {
+    margin-top: 14px;
+    transform: scale(0.8);
+  }
+  .footer[class] {
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 38px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sectionHeader[class] {
+    font-size: 18px;
+  }
+  .sectionInfo[class] {
+    font-size: 14px;
+  }
+
+  .footer[class] {
+    font-size: 14px;
+    letter-spacing: px;
+  }
+}
