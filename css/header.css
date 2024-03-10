@@ -46,6 +46,7 @@
 }
 
 .menuBtn {
+  display: none;
   margin-left: auto;
 }
 .menuBtn a {
@@ -114,6 +115,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .menuBtn {
+    display: block;
+  }
   .fixedHeader {
     height: 56px;
     background-color: #c7000c;
