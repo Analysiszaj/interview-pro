@@ -1,0 +1,134 @@
+.fixedHeader {
+  position: fixed;
+  width: 100vw;
+  height: 90px;
+  top: 0px;
+  z-index: 1000;
+  background-color: white;
+  transition: all 0.5s, width 0s;
+  transform-origin: bottom;
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.icon {
+  width: 172px;
+  height: 56px;
+}
+
+.menu {
+  display: flex;
+  margin-left: auto;
+}
+
+.menu > li {
+  margin-left: 67px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  margin-left: 69px;
+  color: #c7000c;
+  font-size: 17px;
+  font-weight: 600;
+}
+.phone img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.menuBtn {
+  margin-left: auto;
+}
+.menuBtn a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 63px;
+  margin-right: 20px;
+  height: 30px;
+}
+.menuBtn span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.5s;
+}
+.open .menuBtn span:first-child {
+  transform-origin: left;
+  transform: translateY(1px) rotate(45deg);
+}
+.open .menuBtn span:nth-child(2) {
+  opacity: 0;
+}
+.open .menuBtn span:last-child {
+  transform-origin: left;
+  transform: translateY(-1px) rotate(-45deg);
+}
+
+.fixMenuContent {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100vw;
+  height: 0px;
+  background-color: white;
+  transform-origin: top;
+  transition: all 0.5s, width 0s;
+  overflow: hidden;
+}
+.fixMenuContent ul li {
+  padding: 15px 0px;
+  border-bottom: 1px solid #dddddd;
+}
+.fixMenuContent li h3 {
+  padding: 0 20px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.mobile-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  color: #c7000c;
+}
+.mobile-phone span {
+  margin-left: 14px;
+}
+
+.open .fixMenuContent {
+  height: calc(100vh - 56px);
+}
+
+@media screen and (max-width: 1200px) {
+  .fixedHeader {
+    height: 56px;
+    background-color: #c7000c;
+  }
+  .content-box {
+    height: 56px;
+  }
+  .content-box > a {
+    transform: scale(0.7);
+  }
+
+  .menu {
+    display: none;
+  }
+  .phone {
+    display: none;
+  }
+}

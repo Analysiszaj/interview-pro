@@ -1,0 +1,120 @@
+.banner-box {
+  max-width: 1920px;
+  max-height: 1012px;
+  position: relative;
+  height: calc(100vh - 90px);
+  margin: 0 auto;
+  margin-top: 90px;
+  background-image: url('../image/图层850.png');
+  /* background-size: auto 100%; */
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: white;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.bannerContent {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.banner-box h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.banner-box .info {
+  font-size: 20px;
+  margin-bottom: 54px;
+}
+
+.banner-box .info span {
+  font-size: 24px;
+}
+
+.bannerButton {
+  display: block;
+  color: white;
+  width: 307px;
+  height: 55px;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  border-radius: calc(55px / 2);
+  background-color: #c7000b;
+  text-align: center;
+  line-height: 55px;
+}
+
+.quota {
+  margin-bottom: 128px;
+  font-size: 18px;
+}
+
+.quota span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 2px;
+  background-color: #c7000b;
+}
+
+.bannerContent .productList {
+  display: flex;
+  justify-content: center;
+}
+
+.bannerContent .productList a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  line-height: 132px;
+}
+
+.bannerContent .productList li {
+  margin-left: 32px;
+}
+
+.bannerContent .productList a img {
+  width: 72%;
+  height: 72%;
+}
+
+@media screen and (max-width: 1200px) {
+  .banner-box {
+    height: calc(100vh - 56px);
+    margin-top: 56px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .banner-box h1 {
+    font-size: 32px;
+  }
+
+  .banner-box .info {
+    font-size: 14px;
+    margin-bottom: 54px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .banner-box h1 {
+    font-size: 24px;
+  }
+
+  .bannerContent .productList {
+    display: none;
+  }
+}
